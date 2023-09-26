@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Size</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .food{
+            border: 1px solid skyblue;
+            padding: 20px;
+            border-radius: 5px;
+            
+        }
+        .food img{
+            width: 100%;
+        }
+        @media screen and (max-width:576px) {
+            .container{
+                grid-template-columns: repeat(1,1fr);
+            }
+            .food{
+                background-color: antiquewhite;
+            }
+            p{
+                color: blueviolet;
+            }
+            h3{
+                font-size: 2em;
+                color: aquamarine;
+            }
+        }
+        @media screen and (min-width:576px) and (max-width:992px) {
+            .container{
+                grid-template-columns: repeat(2,1fr);
+            }
+            .food{
+                background-color: aquamarine;
+            }
+            p{
+                color: blueviolet;
+            }
+            h3{
+                font-size: 1.5em;
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- .container>.food*12>img[src="img/foodie.jpg"]+h3{food item - $}+p{price: /$$00}+p>lorem20^btn{Buy Now} -->
+    <div class="container">
+        <div class="food">
+            <img src="img/foodie.jpg" alt="">
+            <h3>food item - 1</h3>
+            <p>price: /0100</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus aperiam, quia placeat aliquam voluptas quisquam qui expedita! Quibusdam, ipsum tenetur.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="img/foodie.jpg" alt="">
+            <h3>food item - 2</h3>
+            <p>price: /0200</p>
+            <p>Repudiandae consequatur veritatis pariatur impedit, officia iusto eaque culpa molestias voluptas totam unde? Nihil reiciendis tempore officia quidem vitae dolores?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="img/foodie.jpg" alt="">
+            <h3>food item - 3</h3>
+            <p>price: /0300</p>
+            <p>Perspiciatis voluptate sunt quasi quisquam facere optio delectus tenetur mollitia, consectetur explicabo aspernatur, sint omnis blanditiis neque. Aliquid, omnis non.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="img/foodie.jpg" alt="">
+            <h3>food item - 4</h3>
+            <p>price: /0400</p>
+            <p>Eius nostrum ipsa accusamus harum ut dolor, assumenda ratione quam numquam vitae dolore quis, maiores dolorum rem earum dignissimos adipisci.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="img/foodie.jpg" alt="">
+            <h3>food item - 5</h3>
+            <p>price: /0500</p>
+            <p>Voluptatem perferendis neque inventore omnis illum. Pariatur, atque qui harum possimus autem veniam sunt optio! Tempora quibusdam officiis sit? Aliquam!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="img/foodie.jpg" alt="">
+            <h3>food item - 6</h3>
+            <p>price: /0600</p>
+            <p>Deleniti laboriosam accusantium, nulla eligendi est quo vitae dicta vel voluptatum obcaecati, esse, aperiam atque vero cum veritatis minus ipsam.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="img/foodie.jpg" alt="">
+            <h3>food item - 7</h3>
+            <p>price: /0700</p>
+            <p>Debitis blanditiis fugit alias ea, ullam voluptatum. Ipsum, nulla sint expedita quae earum officia distinctio nobis laborum quia cumque numquam.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="img/foodie.jpg" alt="">
+            <h3>food item - 8</h3>
+            <p>price: /0800</p>
+            <p>Architecto totam eaque facilis quibusdam. Voluptas, tempora accusantium modi quae fuga dolores, consequuntur nobis autem fugiat rem dolorum voluptatum quis?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="img/foodie.jpg" alt="">
+            <h3>food item - 9</h3>
+            <p>price: /0900</p>
+            <p>Facere labore possimus delectus et vitae, distinctio dicta voluptate fuga tempore animi sint atque nulla expedita dolor quibusdam. Placeat, ut.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="img/foodie.jpg" alt="">
+            <h3>food item - 10</h3>
+            <p>price: /1000</p>
+            <p>Facere animi maiores quos eos libero illo, tempore nobis natus maxime veritatis accusamus pariatur et, ut aliquid nesciunt rem voluptates!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="img/foodie.jpg" alt="">
+            <h3>food item - 11</h3>
+            <p>price: /1100</p>
+            <p>Itaque, deleniti? Nemo, culpa itaque! Aliquid error, voluptatibus fuga illo porro quasi molestias nam incidunt quidem totam possimus! Nam, nesciunt.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="img/foodie.jpg" alt="">
+            <h3>food item - 12</h3>
+            <p>price: /1200</p>
+            <p>Deserunt, in nostrum? Possimus at iure error quos consequatur doloremque numquam officiis vitae! Explicabo, eius excepturi ad odio qui quaerat.</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+</body>
+</html>
