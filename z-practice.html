@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice overall</title>
+     <style>
+        .container{
+            display: grid;
+            gap: 10px;
+            /* background-color: #2196F3; */
+            height: 50vh;
+        }
+        .style{
+            /* background-color: aquamarine; */
+            /* text-align: center; */
+            /* padding: 20px; */
+            font-size: 30px;
+        }
+        .item-1{
+            grid-column: 1 / span 2;grid-row: 1 / span 2;
+           background-color: crimson;
+        }
+        .item-2{
+            grid-column: 3 / span 2;
+             grid-row: 1;
+             background-color: orangered;
+        }
+        .item-3{
+            background-color: brown;
+        }
+        .item-4{
+            background-color:silver ;
+        }
+        .image-container img{
+            width: 100%;
+            margin-top: 40px;
+        }
+        .food-container{
+            width:90%;
+            margin: 40px auto;
+        }
+        .food-box{
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: repeat(1,1fr) 2fr;
+            
+        }
+        .img-box img{
+            width: 100%;
+            height: 100%;
+        }
+        .text{border: 1px solid rgb(199, 201, 200);}
+        .text h2{
+            /* margin: 0px; */
+        }
+        .text p{
+          text-align: justify;
+          font-size: 1em;
+          padding-right: 10px;
+        }
+        .btn{
+            background-color: blue;
+            border-radius: 4px;
+            cursor: pointer;
+            color: white;
+            padding: 5px;
+        }
+       .gallery-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+       } 
+       .city-img{
+        width: 100%;
+        height: 100%;
+       }
+        @media screen and (max-width:576px) {
+        .container{
+            grid-template-rows: repeat(4, 1fr);
+            height: 60vh;
+            /* grid-template-rows: repeat(4,1fr); */
+        }
+        .item-1{
+            grid-column: auto;
+            grid-row: auto;
+           background-color: crimson;
+        }
+        .item-2{
+            grid-column:auto;
+             grid-row: auto;
+             background-color: orangered;
+        }
+        .image-container img{
+            width: 100%;
+        }
+        .food-container{
+            width: auto;
+        }
+        .food-box{
+            display: grid;
+            grid-template-rows: repeat(1,1fr);
+            grid-template-columns: none;
+        }
+        .img-box img{
+            width: 100%;
+        }
+       .gallery-container{
+        grid-template-rows: repeat(1,1fr);
+        grid-template-columns: none;
+        /* flex-wrap: wrap-reverse; */
+       }
+}
+
+    </style>
+<body>
+     <div class="container">
+        <div class="item-1 style">1</div>
+        <div class="style item-2">2</div>
+        <div class="style item-3">3</div>
+        <div class="style item-4">4</div>
+    </div>
+    <div class="image-container">
+        <img src="img/tiger.jpg" alt="this is a Tiger photo">
+    </div>
+    <div class="food-container">
+        <div class="food-box">
+            <div class="img-box">
+                <img src="img/foodie.jpg" alt="">
+            </div>
+            <div class="text">
+                <h2>Post Title Will Be Here</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore non possimus molestiae quod excepturi assumenda illum quasi adipisci repellat, necessitatibus eligendi iste! Assumenda, quo! In, sit eum atque ab quod, ratione, ad porro ducimus aut mollitia adipisci similique praesentium optio fugiat vel sunt incidunt facere? Rerum magnam inventore itaque ipsam ex sed amet debitis dolores exercitationem quidem, iste libero eaque, doloribus ratione. Quas, ea. </p>
+                 <button class="btn">Reed More</button>
+            </div>
+        </div>
+        <div class="food-box">
+            <div class="img-box">
+                <img src="img/food-2.jpg" alt="">
+            </div>
+            <div class="text">
+                <h2>Post Title Will Be Here</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore non possimus molestiae quod excepturi assumenda illum quasi adipisci repellat, necessitatibus eligendi iste! Assumenda, quo! In, sit eum atque ab quod, ratione, ad porro ducimus aut mollitia adipisci similique praesentium optio fugiat vel sunt incidunt facere? Rerum magnam inventore itaque ipsam ex sed amet debitis dolores exercitationem quidem, iste libero eaque, doloribus ratione. Quas, ea. </p>
+                 <button class="btn">Reed More</button>
+            </div>
+        </div>
+    </div>
+    <div class="gallery-container">
+        <div class="hometown-1">
+            <img class="city-img" src="img/city-1.jpg" alt="this is a town picture">
+        </div>
+        <div class="hometown-2">
+            <h2>Why do you use it?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eveniet animi ullam magni minima maxime minus commodi sit, alias, magnam ad nobis facilis blanditiis? Eius non consequuntur itaque quidem magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsa excepturi enim ipsum deserunt minus pariatur veniam possimus. Perspiciatis a natus deserunt perferendis accusamus repellat expedita ipsam ipsum quod tempore?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eveniet animi ullam magni minima maxime minus commodi sit, alias, magnam ad nobis facilis blanditiis? Eius non consequuntur itaque quidem magni?</p>
+        </div>
+        <div class="hometown-3">
+            <h2>Why do you use it?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eveniet animi ullam magni minima maxime minus commodi sit, alias, magnam ad nobis facilis blanditiis? Eius non consequuntur itaque quidem magni? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore nemo excepturi obcaecati assumenda neque distinctio magnam earum, laborum dolor, numquam iste omnis expedita impedit eos fuga deserunt natus non. Consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eveniet animi ullam magni minima maxime minus commodi sit, alias, magnam ad nobis facilis blanditiis? Eius non consequuntur itaque quidem magni?</p>
+           
+        </div>
+        <div class="hometown-4">
+            <img class="city-img" src="img/city-1.jpg" alt="this is a town picture">
+        </div>
+    </div>
+</body>
+</html>
